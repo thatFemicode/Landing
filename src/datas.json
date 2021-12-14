@@ -1,0 +1,61 @@
+{
+  "characters": {
+    "info": {
+      "count": 44
+    },
+    "results": [
+      {
+        "id": "2",
+        "name": "hero",
+        "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Earth (Replacement Dimension)"
+        },
+        "origin": {
+          "dimension": "Dimension C-137"
+        }
+      },
+      {
+        "id": "14",
+        "name": "gallery",
+        "image": "https://rickandmortyapi.com/api/character/avatar/14.jpeg",
+        "species": "Alien",
+        "status": "unknown",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "18",
+        "name": "teams",
+        "image": "https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "21",
+        "name": "chip",
+        "image": "https://rickandmortyapi.com/api/character/avatar/21.jpeg",
+        "species": "Humanoid",
+        "status": "unknown",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      }
+    ]
+  }
+}
