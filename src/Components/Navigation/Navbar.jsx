@@ -36,6 +36,7 @@ const Navbar = ({ items, activeCharacter, handleCLick }) => {
           fontFamily="Helvetica, sans-serif"
           height="100%"
           className="site"
+          borderRadius="50%"
         >
           {/* <ContentGroup title="Products" width="420" height="270">
           <Products />

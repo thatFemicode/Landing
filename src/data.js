@@ -3,6 +3,9 @@ import Products from "./Components/Navigation/Products/Products";
 import Pricing from "./Components/Navigation/Pricing/Pricing";
 import Developer from "./Components/Navigation/Developers/Developer";
 import Company from "./Components/Navigation/Company/Company";
+import Hero from "./Components/Hero/Hero";
+import Gallery from "./Components/Gallery/Gallery";
+// import Footer from "./Components/Footer/"
 const data = [
   {
     id: 1,
@@ -37,54 +40,48 @@ const data = [
   //   image: avatar,
   // },
 ];
-// export const tabledata = [
-//   {
-//     id: 1,
-//     name: "Ogunleye Oluwafemi",
-//     amount: "$122.00",
-//     date: "2 Aug 2021",
-//     image: avatar,
-//     position: "Approved",
-//   },
-//   {
-//     id: 2,
-//     name: "Ogunleye Oluwafemi",
-//     amount: "$132.00",
-//     date: "4 Sep 2021",
-//     image: avatar,
-//     position: "Pending",
-//   },
-//   {
-//     id: 3,
-//     name: "Ogunleye Oluwafemi",
-//     amount: "$132.00",
-//     date: "4 Sep 2021",
-//     image: avatar,
-//     position: "Declined",
-//   },
-//   {
-//     id: 4,
-//     name: "Ogunleye Oluwafemi",
-//     amount: "$132.00",
-//     date: "4 Sep 2021",
-//     image: avatar,
-//     position: "Approved",
-//   },
-//   {
-//     id: 5,
-//     name: "Ogunleye Oluwafemi",
-//     amount: "$132.00",
-//     date: "4 Sep 2021",
-//     image: avatar,
-//     position: "Approved",
-//   },
-//   {
-//     id: 6,
-//     name: "Ogunleye Oluwafemi",
-//     amount: "$132.00",
-//     date: "4 Sep 2021",
-//     image: avatar,
-//     position: "Declined",
-//   },
-// ];
+export const sections = [
+  {
+    id: 1,
+    name: "hero",
+    element: <Hero />,
+  },
+  {
+    id: 2,
+    name: "gallery",
+    element: <Gallery />,
+  },
+  // {
+  //   id: 3,
+  //   name: "Ogunleye Oluwafemi",
+  //   amount: "$132.00",
+  //   date: "4 Sep 2021",
+  //   image: avatar,
+  //   position: "Declined",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Ogunleye Oluwafemi",
+  //   amount: "$132.00",
+  //   date: "4 Sep 2021",
+  //   image: avatar,
+  //   position: "Approved",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Ogunleye Oluwafemi",
+  //   amount: "$132.00",
+  //   date: "4 Sep 2021",
+  //   image: avatar,
+  //   position: "Approved",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Ogunleye Oluwafemi",
+  //   amount: "$132.00",
+  //   date: "4 Sep 2021",
+  //   image: avatar,
+  //   position: "Declined",
+  // },
+];
 export default data;

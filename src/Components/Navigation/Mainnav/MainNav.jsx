@@ -2,7 +2,6 @@ import React from "react";
 import { MainNavStyled } from "./MainNavStyled";
 
 const MainNav = ({ items, activeCharacter, handleCLick }) => {
-  console.log(items);
   function renderItems() {
     return items.map((item) => {
       const activeClass =

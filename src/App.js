@@ -9,13 +9,15 @@ import CustomRoute from "./Components/CustomSwitch/CustomSwitch";
 import Home from "./Pages/Home";
 import { Route } from "react-router-dom";
 // import { character } from "./data.json";
-import { characters } from "./datas";
+// import { characters } from "./datas";
+import { sections } from "./data";
 import MainNav from "./Components/Navigation/Mainnav/MainNav";
+import { sect } from "./datad";
 
 function App() {
   const [activeCharacter, setActiveCharacter] = useState();
   const [pageHeight, setPageHeight] = useState();
-  // console.log(characters);
+
   useEffect(() => {
     setPageHeight(window.innerHeight);
     window.addEventListener("resize", (e) => {
@@ -24,8 +26,7 @@ function App() {
       }, 300);
     });
   }, []);
-  console.log(characters.results);
-  const charactersToRender = characters.results;
+  const charactersToRender = sections;
   console.log(charactersToRender);
   const refs = charactersToRender.reduce((refsObj, character) => {
     refsObj[character.name] = createRef();
@@ -77,24 +78,21 @@ function App() {
       <MainStyled>
         <Navbar
           items={data}
-          activeCharacter={activeCharacter}
+          // activeCharacter={activeCharacter}
           // handleCLick={handleCLick}
         />
-        <MainNav
-          items={charactersToRender}
-          activeCharacter={activeCharacter}
-          handleCLick={handleCLick}
-        />
+
         <CustomRoute>
           <Route
             path="/"
             element={
               <Home
+                items={charactersToRender}
                 activeCharacter={activeCharacter}
-                data={charactersToRender}
-                setActiveCharacter={setActiveCharacter}
                 pageHeight={pageHeight}
                 refs={refs}
+                handleCLick={handleCLick}
+                setActiveCharacter={setActiveCharacter}
               />
             }
           />
